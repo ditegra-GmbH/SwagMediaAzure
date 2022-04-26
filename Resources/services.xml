@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+
+        <!-- <service id="swag_media_azure.components.thumbnail.generator.basic"
+                 class="SwagMediaAzure\Components\Thumbnail\Generator\Basic"
+                 decorates="thumbnail_generator_basic"
+                 public="false">
+            <argument type="service" id="swag_media_azure.components.thumbnail.generator.basic.inner"/>
+        </service> -->
+
+
+            <service id="thumbnail_generator_basic" class="SwagMediaAzure\Components\Thumbnail\Generator\Basic">
+                <argument type="service" id="Shopware_Components_Config"/>
+                <argument type="service" id="Shopware\Bundle\MediaBundle\MediaServiceInterface"/>
+                <argument type="service" id="Shopware\Bundle\MediaBundle\OptimizerService"/>
+            </service>
+
+
+    </services>
+</container>

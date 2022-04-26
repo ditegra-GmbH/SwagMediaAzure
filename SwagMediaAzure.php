@@ -38,13 +38,7 @@ class SwagMediaAzure extends Plugin
     {
         $config = $args->get('config');
 
-        $endpoint = sprintf(
-            'DefaultEndpointsProtocol=https;AccountName=%s;AccountKey=%s',
-            $config['accountName'],
-            $config['apiKey']
-        );
-
-        $client = BlobRestProxy::createBlobService($endpoint);
+        $client = BlobRestProxy::createBlobService($config['dsn']);
 
         return new AzureBlobStorageAdapter($client, $config['containerName']);
     }

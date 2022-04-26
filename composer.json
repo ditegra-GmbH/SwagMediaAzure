@@ -11,6 +11,11 @@
     	"exclude": ["/shopwarelabs-swag-media-azure-*.*", "/.git", "/.gitignore", "!/vendor"]
     },
     "require": {
-        "league/flysystem-azure-blob-storage": "0.1.4"
+        "league/flysystem-azure-blob-storage": "0.1.4",
+        "guzzlehttp/psr7":"2.2.1",
+        "guzzlehttp/guzzle":"7.4.1"
+    },
+    "replace": {
+
     }
 }

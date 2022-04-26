@@ -5,9 +5,9 @@
     <label lang="de">Media Adapter: Azure</label>
     <label lang="en">Media adapter: Azure</label>
 
-    <version>2.0.0</version>
+    <version>2.0.1</version>
     <copyright>(c) by shopware AG</copyright>
     <license>proprietary</license>
     <author>shopware AG</author>
-    <compatibility minVersion="5.4.0"/>
+    <compatibility minVersion="5.7.8"/>
 </plugin>
