@@ -1,16 +1,38 @@
 {
-    "name":"shopwarelabs/swag-media-azure",
-    "type": "shopware-plugin",
-    "description": "Shopware media adapter to store media files on Azure Blob Storage.",
-    "comment": "league/flysystem and guzzlehttp/guzzle are provided by shopware",
-    "keywords": ["shopware", "azure"],
-    "config": {
-    	"optimize-autoloader": true
-	},
-    "archive": {
-    	"exclude": ["/shopwarelabs-swag-media-azure-*.*", "/.git", "/.gitignore", "!/vendor"]
-    },
-    "require": {
-        "league/flysystem-azure-blob-storage": "0.1.4"
+  "name": "diga/swagmediaazuresw6-plugin",
+  "description": "swagmediaazuresw6 Plugin",
+  "version": "v0.0.1",
+  "type": "shopware-platform-plugin",
+  "license": "proprietary",
+  "authors": [{
+    "name": "ditegra GmbH"
+  }],
+  "autoload": {
+    "psr-4": {
+      "DigaSwagMediaAzureSw6\\": "src/"
     }
+  },
+  "extra": {
+    "shopware-plugin-class": "DigaSwagMediaAzureSw6\\DigaSwagMediaAzureSw6",
+    "label": {
+      "de-DE": "DigaSwagMediaAzureSw6",
+      "en-GB": "DigaSwagMediaAzureSw6"
+    },
+    "copyright": "ditegra GmbH",
+    "description": {
+      "de-DE": "",
+      "en-GB": ""
+    },
+    "manufacturerLink": {
+      "de-DE": "https://www.ditegra.de",
+      "en-GB": "https://www.ditegra.de"
+    },
+    "supportLink": {
+      "de-DE": "https://www.ditegra.de",
+      "en-GB": "https://www.ditegra.de"
+    }
+  },
+  "require": {
+    "league/flysystem-azure-blob-storage": "0.1.4"
+  }
 }
