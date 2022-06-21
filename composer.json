@@ -33,6 +33,7 @@
     }
   },
   "require": {
+    "shopware/core": "^6.4.3",
     "league/flysystem-azure-blob-storage": "0.1.4"
   }
 }

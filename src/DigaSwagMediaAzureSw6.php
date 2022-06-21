@@ -6,5 +6,6 @@ use Shopware\Core\Framework\Plugin;
 
 class DigaSwagMediaAzureSw6 extends Plugin
 {
+
     
 }

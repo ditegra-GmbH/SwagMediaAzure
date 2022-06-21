@@ -21,7 +21,11 @@ class AzureAdapterFactory implements AdapterFactoryInterface
         // return new MyFlysystemAdapter($config);
         // $config = $args->get('config');
 
-        $client = BlobRestProxy::createBlobService($config['dns']);
+        if (file_exists(dirname(__DIR__) . '/../vendor/autoload.php')) {
+            require_once dirname(__DIR__) . '/../vendor/autoload.php';
+        }
+
+        $client = BlobRestProxy::createBlobService($config['dsn']);
         return new AzureBlobStorageAdapter($client, $config['containerName']);
     }
 }
