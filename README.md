@@ -1,11 +1,11 @@
-# SwagMediaAzureSw6 App
+# DigaMediaAzureSw6 App
 
 ## Installation
 
 1. Deploy plugin (via FTP)
 2. Remove *shopware/core* from composer.json/require
 3. Run *composer i*
-4. Add *shopware/core* from composer.json/require
+4. Add *shopware/core* to composer.json/require
 5. Install plugin
 6. Add configuration to *config/packages/shopware.yaml*
 ```
@@ -24,4 +24,4 @@ shopware:
 
 }
 ``` 
-7. Add or migrate media
+7. Migrate media manually
